@@ -1,0 +1,204 @@
+/* Classic Cinema - custom styles */
+:root {
+  --cinema-red: #b5122b;
+  --cinema-dark: #15131a;
+  --cinema-cream: #f7f4f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #25232a;
+  background: #fff;
+}
+
+.cinema-nav {
+  background: var(--cinema-dark);
+}
+
+.navbar-brand {
+  letter-spacing: 1.5px;
+}
+
+.navbar-brand span {
+  color: #f05a70;
+}
+
+.nav-link {
+  margin-left: 0.75rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff9aaa !important;
+}
+
+.hero-section {
+  min-height: 560px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: url("../images/theater-curtains.jpg");
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 8, 13, 0.82), rgba(10, 8, 13, 0.42));
+  z-index: -1;
+}
+
+.hero-content {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-content h1 {
+  max-width: 850px;
+  margin: 0 auto 1rem;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.45);
+}
+
+.hero-content .lead {
+  max-width: 650px;
+  color: #f1e9eb;
+}
+
+.eyebrow {
+  color: var(--cinema-red);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.hero-content .eyebrow {
+  color: #ffb5c0;
+}
+
+.movie-section {
+  background: var(--cinema-cream);
+}
+
+.section-heading h2,
+.about-section h2 {
+  color: var(--cinema-dark);
+}
+
+.movie-card {
+  overflow: hidden;
+  border: 0;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(25, 15, 20, 0.14) !important;
+}
+
+.movie-art {
+  min-height: 185px;
+  display: flex;
+  align-items: end;
+  padding: 1.25rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.movie-art span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.ben-hur-art {
+  background-image: linear-gradient(135deg, rgba(90, 35, 15, .25), rgba(15, 10, 10, .8)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80");
+}
+
+.earth-art {
+  background-image: linear-gradient(135deg, rgba(10, 35, 75, .25), rgba(5, 10, 25, .8)),
+    url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80");
+}
+
+.vertigo-art {
+  background-image: linear-gradient(135deg, rgba(100, 15, 45, .25), rgba(10, 8, 20, .8)),
+    url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80");
+}
+
+.movie-card .card-body {
+  padding: 1.5rem;
+}
+
+.movie-card .card-title {
+  color: #231c22;
+  font-weight: 700;
+}
+
+.movie-card .card-text {
+  line-height: 1.65;
+  color: #5b5660;
+}
+
+.movie-details {
+  border-top: 1px solid #eee8e8;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.movie-details p {
+  margin-bottom: 0.45rem;
+}
+
+.about-section {
+  background: #fff;
+}
+
+.about-section p:not(.eyebrow) {
+  color: #5b5660;
+  line-height: 1.8;
+}
+
+.about-note {
+  padding: 1.75rem;
+  border-left: 4px solid var(--cinema-red);
+  border-radius: 8px;
+  background: var(--cinema-cream);
+}
+
+.site-footer {
+  background: var(--cinema-dark);
+  color: #eee;
+}
+
+.site-footer small {
+  color: #c9c3c8;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    min-height: 480px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.45rem;
+  }
+
+  .movie-art {
+    min-height: 160px;
+  }
+}
